@@ -26,3 +26,35 @@
     height: 5px;
     
 }
+@media (max-width: 480px) {
+    .portfolio .title{
+    position: relative;
+    left: 22%;
+    top: 50px;
+    
+    }
+    .parrafo-perfil{
+        max-width: 90%;
+        line-height: 1.4;
+    }
+    .project-container{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0;
+        gap: 0;
+    }
+    .project{
+        width: 70%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .image-container img{
+        width: 100%;
+    }
+    
+    
+} 

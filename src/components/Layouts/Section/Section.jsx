@@ -10,7 +10,7 @@ const Section = () => {
         <div className='section'>
             <img src={imagePerfil} alt="" />
             <h2 className='nombre'> JONATHAN TOMBE</h2>
-            <div className="progress-bar" ></div>
+            <hr />
             <h3 className='perfil-h3'>Perfil</h3>
             <h3 className='perfil-h3'>Proyectos</h3>
             <h3 className='perfil-h3'>Referencias</h3>

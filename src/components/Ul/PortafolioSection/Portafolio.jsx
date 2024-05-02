@@ -5,7 +5,7 @@ import "./Portafolio.css"
 
 const PortafolioSection = (props) => {
     const containerStyle = {
-        height: '5px', // Ajusta el alto según tus necesidades
+        height: '5px', 
     };
     return (
         <section className={`portfolio`}>

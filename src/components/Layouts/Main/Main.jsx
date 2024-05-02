@@ -1,7 +1,6 @@
 import React from 'react'
 import './Main.css'
 import PortafolioSection from '../../Ul/PortafolioSection/Portafolio';
-import logoSena from '../../../../public/car-2.jpg';
 import imageReact from '../../../../public/react.png'
 import imageNode from '../../../../public/nodejs.png'
 import imageMongodb from '../../../../public/mongodb.png'
@@ -15,21 +14,25 @@ const Main = () => {
             title: "ridex",
             description: "Descripción  ",
             link: "Ir al proyecto",
+            imageUrl: "../../../../public/hero-banner.jpg",
         },
         {
             title: "market website",
             description: "Descripción ",
             link: "Ir al proyecto",
+            imageUrl: "../../../../public/hero-banners.jpg",
         },
         {
             title: "car _website",
             description: "Descripción",
             link: "Ir al proyecto",
+            imageUrl:"../../../../public/services-5.png",
         },
         {
             title: "Portafolio",
             description: "Descripción",
             link: "Ir al proyecto",
+            imageUrl: "../../../../public/car-2.jpg",
         },
         
     ];
@@ -67,7 +70,7 @@ const Main = () => {
                 {projectData.map((project, index) => (
                     <div key={index} className="project">
                         <div className="image-container">
-                            <img src={logoSena} alt='Logo SENA' />
+                            <img src={project.imageUrl} alt={project.title} />
                         </div>
                         <div className="content-container">
                             <h2 className='titulo-h2'>{project.title}</h2>
@@ -102,29 +105,28 @@ const Main = () => {
             <div className='image-react'>
                 <img src={imageReact} alt="" />
                 
-                <ProgressBar completed={50} />
+                <ProgressBar completed={50} className='progress-bar-linea'/>
                 <h2>React</h2>
             </div>
             <div className='image-react'>
                 <img src={imageNode} alt="" />
 
-                <ProgressBar completed={50} />
+                <ProgressBar completed={50} className='progress-bar-linea'/>
                 <h2>Nodejs</h2>
             </div>
             <div className='image-react'>
                 <img src={imageMongodb} alt="" />
 
-                <ProgressBar completed={50} />
+                <ProgressBar completed={50} className='progress-bar-linea' />
                 <h2>Mongodb</h2>
             </div>
             <div className='image-react'>
                 <img src={imageJava} alt="" />
 
-                <ProgressBar completed={50} />
+                <ProgressBar completed={50} className='progress-bar-linea'/>
                 <h2>Java</h2>
             </div>
             </div>
-
         </main>
     )
 }
