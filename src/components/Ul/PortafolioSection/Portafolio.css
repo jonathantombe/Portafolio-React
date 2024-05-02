@@ -1,5 +1,4 @@
 .portfolio {
-    background: lightblue;
     margin-bottom: 20px;
     padding: 0 20px;
 }
@@ -9,6 +8,9 @@
     left: 11%;
     top: 40px;
     font-size: 25px;
+    text-shadow: 0 0 5px;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 60%;
 }
 
 .portfolio .title.no-border {

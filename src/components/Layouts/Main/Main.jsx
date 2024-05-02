@@ -2,44 +2,55 @@ import React from 'react'
 import './Main.css'
 import PortafolioSection from '../../Ul/PortafolioSection/Portafolio';
 import logoSena from '../../../../public/car-2.jpg';
+import imageReact from '../../../../public/react.png'
+import imageNode from '../../../../public/nodejs.png'
+import imageMongodb from '../../../../public/mongodb.png'
+import imageJava from '../../../../public/java.png'
+import ProgressBar from "@ramonak/react-progress-bar";
 
 
 const Main = () => {
     const projectData = [
         {
-            title: "Proyecto 1",
-            description: "Descripción del proyecto 1",
-            link: "Enlace al proyecto 1",
+            title: "ridex",
+            description: "Descripción  ",
+            link: "Ir al proyecto",
         },
         {
-            title: "Proyecto 2",
-            description: "Descripción del proyecto 2",
-            link: "Enlace al proyecto 2",
+            title: "market website",
+            description: "Descripción ",
+            link: "Ir al proyecto",
         },
         {
-            title: "Proyecto 1",
-            description: "Descripción del proyecto 1",
-            link: "Enlace al proyecto 1",
+            title: "car _website",
+            description: "Descripción",
+            link: "Ir al proyecto",
         },
         {
-            title: "Proyecto 2",
-            description: "Descripción del proyecto 2",
-            link: "Enlace al proyecto 2",
+            title: "Portafolio",
+            description: "Descripción",
+            link: "Ir al proyecto",
         },
         
     ];
     const referenceData = [
         {
-            name: "Nombre de la Persona 1",
-            position: "Cargo de la Persona 1",
+            name: "Nombre ",
+            position: "Cargo ",
             phone: "123456789",
-            email: "persona1@example.com",
+            email: "@example.com",
         },
         {
-            name: "Nombre de la Persona 2",
-            position: "Cargo de la Persona 2",
+            name: "Nombre",
+            position: "Cargo ",
             phone: "987654321",
-            email: "persona2@example.com",
+            email: "@example.com",
+        },
+        {
+            name: "Nombre ",
+            position: "Cargo ",
+            phone: "987654321",
+            email: "@example.com",
         },
     ];
     return (
@@ -48,7 +59,7 @@ const Main = () => {
             <PortafolioSection title="Perfil" hasBorder={true} progressValue="100" height="5px">
 
             </PortafolioSection>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores voluptatem dolorum odio exercitationem, labore at illum officiis delectus accusantium veniam laudantium soluta! Non esse quae obcaecati voluptatibus quaerat in!</p>
+            <p className='parrafo-perfil'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores voluptatem dolorum odio exercitationem, labore at illum officiis delectus accusantium veniam laudantium soluta! Non esse quae obcaecati voluptatibus quaerat in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor non, illo accusamus neque corporis nobis ullam fugiat alias similique odit delectus quasi aut nesciunt nam eos ab porro? Aliquam, animi?</p>
 
             <PortafolioSection title="Proyectos" hasBorder={false} progressValue="100" height="5px">
             </PortafolioSection>
@@ -59,40 +70,61 @@ const Main = () => {
                             <img src={logoSena} alt='Logo SENA' />
                         </div>
                         <div className="content-container">
-                            <h2>{project.title}</h2>
-                            <p>{project.description}</p>
-                            <button>{project.link}</button>
+                            <h2 className='titulo-h2'>{project.title}</h2>
+                            <p className='description'>{project.description}</p>
+                            <a href="">
+                                <button className='button-link'>{project.link}</button>
+                            </a>
                         </div>
                     </div>
                 ))}
             </div>
 
-            <PortafolioSection title="Referencias" hasBorder={true} progressValue="10" height="5px">
-                <div className="reference-container">
-                    {referenceData.map((reference, index) => (
-                        <div key={index} className="reference">
-                            <div>
-                                <strong>Nombre:</strong> {reference.name}
-                            </div>
-                            <div>
-                                <strong>Cargo:</strong> {reference.position}
-                            </div>
-                            <div>
-                                <strong>Teléfono:</strong> {reference.phone}
-                            </div>
-                            <div>
-                                <strong>Email:</strong> {reference.email}
-                            </div>
+            <PortafolioSection title="Referencias" hasBorder={true} progressValue="100" height="5px">
+            </PortafolioSection>
+
+            <div className="reference-container">
+                {referenceData.map((reference, index) => (
+                    <div key={index} className="reference">
+                        <div className='reference-texto'>
+                            <p>Nombre: {reference.name}</p>
+                            <p>Cargo: {reference.position}</p>
+                            <p>Teléfono: {reference.phone}</p>
+                            <p>Email: {reference.email}</p>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
+            </div>
+                
+            <PortafolioSection title="Experiencia" hasBorder={false} progressValue="0" height="5px">
             </PortafolioSection>
-            
-        
-            
-            <PortafolioSection title="titulo 4" hasBorder={false} progressValue="95" height="5px">
-                content 4
-            </PortafolioSection>
+            <div className='contenedor-image'>
+            <div className='image-react'>
+                <img src={imageReact} alt="" />
+                
+                <ProgressBar completed={50} />
+                <h2>React</h2>
+            </div>
+            <div className='image-react'>
+                <img src={imageNode} alt="" />
+
+                <ProgressBar completed={50} />
+                <h2>Nodejs</h2>
+            </div>
+            <div className='image-react'>
+                <img src={imageMongodb} alt="" />
+
+                <ProgressBar completed={50} />
+                <h2>Mongodb</h2>
+            </div>
+            <div className='image-react'>
+                <img src={imageJava} alt="" />
+
+                <ProgressBar completed={50} />
+                <h2>Java</h2>
+            </div>
+            </div>
+
         </main>
     )
 }
