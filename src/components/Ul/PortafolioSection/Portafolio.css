@@ -28,17 +28,15 @@
 }
 @media (max-width: 480px) {
     .portfolio .title{
-    position: relative;
-    left: 22%;
-    top: 50px;
-    
+        position: relative;
+        left: 22%;
+        top: 44px;
     }
     .parrafo-perfil{
         max-width: 90%;
         line-height: 1.4;
     }
     .project-container{
-        width: 100%;
         margin: 0;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -52,9 +50,15 @@
         flex-direction: column;
 
     }
-    .image-container img{
-        width: 100%;
+} 
+@media (max-width: 720px) {
+    .portfolio .title{
+        position: relative;
+        left: 22%;
+        top: 44px;
     }
     
+}
+@media (max-width: 920px) {
     
-} 
+}

@@ -14,24 +14,28 @@ const Main = () => {
             title: "ridex",
             description: "Descripción  ",
             link: "Ir al proyecto",
+            projectUrl: "https://github.com/jonathantombe/lamborghini-sports-cars.git",
             imageUrl: "../../../../public/hero-banner.jpg",
         },
         {
             title: "market website",
             description: "Descripción ",
             link: "Ir al proyecto",
+            projectUrl: "https://github.com/jonathantombe/marketplace-website.git",
             imageUrl: "../../../../public/hero-banners.jpg",
         },
         {
             title: "car _website",
             description: "Descripción",
             link: "Ir al proyecto",
+            projectUrl: "https://github.com/jonathantombe/-car_website.git",
             imageUrl:"../../../../public/services-5.png",
         },
         {
             title: "Portafolio",
             description: "Descripción",
             link: "Ir al proyecto",
+            projectUrl: "https://github.com/jonathantombe/Portafolio",
             imageUrl: "../../../../public/car-2.jpg",
         },
         
@@ -58,13 +62,18 @@ const Main = () => {
     ];
     return (
         <main className='main'>
-
-            <PortafolioSection title="Perfil" hasBorder={true} progressValue="100" height="5px">
+            
+            <PortafolioSection id="#perfil" title="Perfil" hasBorder={true} progressValue="100" height="5px">
+                <href />
 
             </PortafolioSection>
-            <p className='parrafo-perfil'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores voluptatem dolorum odio exercitationem, labore at illum officiis delectus accusantium veniam laudantium soluta! Non esse quae obcaecati voluptatibus quaerat in! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor non, illo accusamus neque corporis nobis ullam fugiat alias similique odit delectus quasi aut nesciunt nam eos ab porro? Aliquam, animi?</p>
+            <p className='parrafo-perfil'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores voluptatem dolorum odio exercitationem, labore at illum officiis delectus accusantium veniam laudantium soluta! Non esse quae obcaecati voluptatibus quaerat in!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor non, illo accusamus neque corporis nobis ullam fugiat alias similique odit delectus quasi aut nesciunt nam eos ab porro? Aliquam, animi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque doloribus eveniet debitis, temporibus saepe quisquam quod, optio illo, in nam harum. Sit, exercitationem dignissimos fugiat voluptate aspernatur incidunt ea corrupti?
+            </p>
 
-            <PortafolioSection title="Proyectos" hasBorder={false} progressValue="100" height="5px">
+            <PortafolioSection id="proyectos" title="Proyectos" hasBorder={false} progressValue="100" height="5px">
             </PortafolioSection>
             <div className="project-container">
                 {projectData.map((project, index) => (
@@ -75,7 +84,7 @@ const Main = () => {
                         <div className="content-container">
                             <h2 className='titulo-h2'>{project.title}</h2>
                             <p className='description'>{project.description}</p>
-                            <a href="">
+                            <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
                                 <button className='button-link'>{project.link}</button>
                             </a>
                         </div>
@@ -83,7 +92,7 @@ const Main = () => {
                 ))}
             </div>
 
-            <PortafolioSection title="Referencias" hasBorder={true} progressValue="100" height="5px">
+            <PortafolioSection id="Referencias" title="Referencias" hasBorder={true} progressValue="100" height="5px">
             </PortafolioSection>
 
             <div className="reference-container">
@@ -99,32 +108,32 @@ const Main = () => {
                 ))}
             </div>
                 
-            <PortafolioSection title="Experiencia" hasBorder={false} progressValue="0" height="5px">
+            <PortafolioSection id="experiencia" title="Experiencia" hasBorder={false} progressValue="0" height="5px">
             </PortafolioSection>
             <div className='contenedor-image'>
             <div className='image-react'>
                 <img src={imageReact} alt="" />
                 
                 <ProgressBar completed={50} className='progress-bar-linea'/>
-                <h2>React</h2>
+                <h2 className='react-h2'>React</h2>
             </div>
             <div className='image-react'>
                 <img src={imageNode} alt="" />
 
                 <ProgressBar completed={50} className='progress-bar-linea'/>
-                <h2>Nodejs</h2>
+                <h2 className='react-h2'>Nodejs</h2>
             </div>
             <div className='image-react'>
                 <img src={imageMongodb} alt="" />
 
                 <ProgressBar completed={50} className='progress-bar-linea' />
-                <h2>Mongodb</h2>
+                <h2 className='react-h2'>Mongodb</h2>
             </div>
             <div className='image-react'>
                 <img src={imageJava} alt="" />
 
                 <ProgressBar completed={50} className='progress-bar-linea'/>
-                <h2>Java</h2>
+                <h2 className='react-h2'>Java</h2>
             </div>
             </div>
         </main>

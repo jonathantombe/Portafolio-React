@@ -11,10 +11,10 @@ const Section = () => {
             <img src={imagePerfil} alt="" />
             <h2 className='nombre'> JONATHAN TOMBE</h2>
             <hr />
-            <h3 className='perfil-h3'>Perfil</h3>
-            <h3 className='perfil-h3'>Proyectos</h3>
-            <h3 className='perfil-h3'>Referencias</h3>
-            <h3 className='perfil-h3'>Experiencia</h3>
+             <a href="#perfil"><h3 className='perfil-h3'>Perfil</h3></a>
+            <a href="#proyectos"><h3 className='perfil-h3'>Proyectos</h3></a>
+            <a href="#referencias"><h3 className='perfil-h3'>Referencias</h3></a>
+            <a href="#experiencia"><h3 className='perfil-h3'>Experiencia</h3></a>
             <img className='logo-sena-img' src={logoSena} alt="" />
             <div className="redes-sociales">
                 <FontAwesomeIcon icon={faLinkedin} className='redes'/>
