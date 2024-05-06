@@ -15,28 +15,28 @@ const Main = () => {
             description: "Descripción  ",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/lamborghini-sports-cars.git",
-            imageUrl: "../../../../public/hero-banner.jpg",
+            imageUrl: "../../../../public/designer_4x_png by Alex.jpg",
         },
         {
             title: "market website",
             description: "Descripción ",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/marketplace-website.git",
-            imageUrl: "../../../../public/hero-banners.jpg",
+            imageUrl: "../../../../public/designer_4x_png by Alex.jpg",
         },
         {
             title: "car _website",
             description: "Descripción",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/-car_website.git",
-            imageUrl:"../../../../public/services-5.png",
+            imageUrl:"../../../../public/designer_4x_png by Alex.jpg",
         },
         {
             title: "Portafolio",
             description: "Descripción",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/Portafolio",
-            imageUrl: "../../../../public/car-2.jpg",
+            imageUrl: "../../../../designer_4x_png by Alex.jpg",
         },
         
     ];
