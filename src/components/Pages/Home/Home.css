@@ -1,0 +1,13 @@
+.home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+ @media (max-width: 480px) {
+    .home{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+} 
