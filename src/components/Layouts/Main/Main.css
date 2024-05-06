@@ -135,7 +135,7 @@
 }
 @media (max-width: 920px) {
     .reference {
-        width: 160px;
+        width: 150px;
         height: auto;
         border: 2px dashed gray;
         padding: 10px;
