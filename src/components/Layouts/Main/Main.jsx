@@ -1,13 +1,17 @@
 import React from 'react'
 import './Main.css'
 import PortafolioSection from '../../Ul/PortafolioSection/Portafolio';
-import imageReact from '../../../../public/react.png'
-import imageNode from '../../../../public/nodejs.png'
-import imageMongodb from '../../../../public/mongodb.png'
+import imageReact from '../../../../public/react.png';
+import imageNode from '../../../../public/nodejs.png';
+import imageMongodb from '../../../../public/mongodb.png';
 import imageJava from '../../../../public/java.png'
 import ProgressBar from "@ramonak/react-progress-bar";
-
-
+import prj1 from '../../../../public/designer-Alex.jpg';
+import prj2 from '../../../../public/designer-Alex.jpg';
+import prj3 from '../../../../public/Concepto robo.jpg';
+import prj4 from '../../../../public/descarga20.jpg';
+    
+    
 const Main = () => {
     const projectData = [
         {
@@ -15,28 +19,28 @@ const Main = () => {
             description: "Descripción  ",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/lamborghini-sports-cars.git",
-            imageUrl: "../../../../public/designer_4x_png by Alex.jpg",
+            imageUrl: prj1,
         },
         {
             title: "market website",
             description: "Descripción ",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/marketplace-website.git",
-            imageUrl: "../../../../public/designer_4x_png by Alex.jpg",
+            imageUrl: prj2,
         },
         {
             title: "car _website",
             description: "Descripción",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/-car_website.git",
-            imageUrl:"../../../../public/designer_4x_png by Alex.jpg",
+            imageUrl: prj3,
         },
         {
             title: "Portafolio",
             description: "Descripción",
             link: "Ir al proyecto",
             projectUrl: "https://github.com/jonathantombe/Portafolio",
-            imageUrl: "../../../../designer_4x_png by Alex.jpg",
+            imageUrl: prj4,
         },
         
     ];
